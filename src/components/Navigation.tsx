@@ -15,7 +15,7 @@ const Navigation = () => {
         </Link>
         <Link to="/favourites" className="relative">
           Favourites{" "}
-          {favourites && (
+          {favourites.length > 0 && (
             <span className="px-2 py-1 text-xs font-medium absolute -top-3 -right-4 bg-red-500 rounded-full">
               {favourites.length}
             </span>
